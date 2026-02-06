@@ -31,3 +31,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# large media (keep locally; host elsewhere or compress for repo)
+/public/hero-video.mp4
+/public/hero-video.mov
+/public/*.mp4
+/public/*.mov
