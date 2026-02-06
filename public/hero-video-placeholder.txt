@@ -1,0 +1,2 @@
+Add your hero video as hero-video.mp4 in this folder.
+Use an MP4 file (H.264) for best compatibility. Keep file size reasonable for web (e.g. under 5MB) or use a short loop.
