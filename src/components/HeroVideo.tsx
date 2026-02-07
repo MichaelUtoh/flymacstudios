@@ -2,8 +2,13 @@
 
 import { useEffect, useState } from "react";
 
+/** Default hero video: Cloudinary URL from env, or local path. */
+const defaultVideoSrc =
+  (typeof process !== "undefined" && process.env.NEXT_PUBLIC_HERO_VIDEO_URL) ||
+  "/hero-video.mp4";
+
 interface HeroVideoProps {
-  /** URL to the video file (e.g. /hero.mp4). Use a placeholder or your own asset. */
+  /** URL to the video (e.g. Cloudinary: https://res.cloudinary.com/.../video/upload/.../file.mp4) */
   src?: string;
   /** Optional poster image URL for lazy loading / fallback */
   poster?: string;
@@ -12,7 +17,7 @@ interface HeroVideoProps {
 }
 
 export function HeroVideo({
-  src = "/hero-video.mp4",
+  src = defaultVideoSrc,
   poster,
   disableOnMobile = true,
 }: HeroVideoProps) {
