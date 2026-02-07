@@ -45,7 +45,7 @@ export function HeroContent() {
           Live to Tell Stories
         </h1>
         <p className="text-soft-gray text-base md:text-lg font-sans">
-          Photographer &amp; Videographer
+          Drone Pilot &amp; Videographer
         </p>
         <Link
           href="/collections"

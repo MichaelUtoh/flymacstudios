@@ -6,11 +6,11 @@ import { HeroContent } from "@/components/HeroContent";
 export const metadata: Metadata = {
   title: "Flymac Studios | Live to Tell Stories",
   description:
-    "Photographer & Videographer. Premium creative portfolio — photography and film.",
+    "Drone Pilot & Videographer. Premium creative portfolio — photography and film.",
   openGraph: {
     title: "Flymac Studios | Live to Tell Stories",
     description:
-      "Photographer & Videographer. Premium creative portfolio.",
+      "Drone Pilot & Videographer. Premium creative portfolio.",
   },
 };
 
