@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -15,6 +16,7 @@ const config: Config = {
       colors: {
         charcoal: "#2d2d2d",
         "soft-gray": "#6b6b6b",
+        "dark-bg": "#0f0f0f",
       },
       transitionDuration: {
         DEFAULT: "300ms",

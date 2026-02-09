@@ -35,26 +35,26 @@ export function HeroContent() {
       aria-labelledby="hero-headline"
     >
       <div className="flex flex-col items-center gap-8 max-w-lg">
-        <p className="font-serif text-charcoal text-lg md:text-xl tracking-[0.2em] uppercase">
+        <p className="font-serif text-charcoal dark:text-white/90 text-lg md:text-xl tracking-[0.2em] uppercase">
           Flymac Studios
         </p>
         <h1
           id="hero-headline"
-          className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-charcoal leading-tight tracking-tight"
+          className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-charcoal dark:text-white leading-tight tracking-tight"
         >
           Live to Tell Stories
         </h1>
-        <p className="text-soft-gray text-base md:text-lg font-sans">
+        <p className="text-soft-gray dark:text-white/70 text-base md:text-lg font-sans">
           Drone Pilot &amp; Videographer
         </p>
         <Link
           href="/collections"
-          className="inline-block px-8 py-4 mt-2 text-sm font-medium tracking-widest uppercase text-white bg-charcoal rounded-sm transition-all duration-300 hover:bg-charcoal/90 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-charcoal focus:ring-offset-2 focus:ring-offset-white min-h-[48px] flex items-center justify-center"
+          className="inline-block px-8 py-4 mt-2 text-sm font-medium tracking-widest uppercase text-white bg-charcoal dark:bg-white dark:text-dark-bg rounded-sm transition-all duration-300 hover:bg-charcoal/90 dark:hover:bg-white/90 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-charcoal dark:focus:ring-white focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-dark-bg min-h-[48px] flex items-center justify-center"
         >
           View Collections
         </Link>
         <nav
-          className="flex items-center justify-center gap-8 mt-12 pt-8 border-t border-gray-200"
+          className="flex items-center justify-center gap-8 mt-12 pt-8 border-t border-gray-200 dark:border-white/20"
           aria-label="Social media"
         >
           {socialLinks.map(({ label, href, icon }) => (
@@ -63,7 +63,7 @@ export function HeroContent() {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-soft-gray transition-colors duration-300 hover:text-charcoal focus:outline-none focus:ring-2 focus:ring-charcoal focus:ring-offset-2 focus:ring-offset-white rounded"
+              className="text-soft-gray dark:text-white/70 transition-colors duration-300 hover:text-charcoal dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-charcoal dark:focus:ring-white focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-dark-bg rounded"
               aria-label={label}
             >
               <SocialIcon name={icon} />

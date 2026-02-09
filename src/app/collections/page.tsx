@@ -55,7 +55,7 @@ function CollectionCard({
   image: string;
 }) {
   return (
-    <article className="group relative aspect-[4/5] overflow-hidden rounded-sm bg-charcoal/5 cursor-pointer">
+    <article className="group relative aspect-[4/5] overflow-hidden rounded-sm bg-charcoal/5 dark:bg-white/5 cursor-pointer">
       <Image
         src={image}
         alt={title}
@@ -78,19 +78,19 @@ function CollectionCard({
 
 export default function CollectionsPage() {
   return (
-    <main className="min-h-screen bg-white">
-      <header className="border-b border-gray-100">
+    <main className="min-h-screen bg-white dark:bg-dark-bg transition-colors duration-300">
+      <header className="border-b border-gray-100 dark:border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-8 md:py-12">
           <Link
             href="/"
-            className="inline-block text-soft-gray text-sm tracking-widest uppercase mb-6 transition-colors duration-300 hover:text-charcoal focus:outline-none focus:ring-2 focus:ring-charcoal focus:ring-offset-2 rounded"
+            className="inline-block text-soft-gray dark:text-white/70 text-sm tracking-widest uppercase mb-6 transition-colors duration-300 hover:text-charcoal dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-charcoal dark:focus:ring-white focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-dark-bg rounded"
           >
             ← Back to home
           </Link>
-          <h1 className="font-serif text-4xl md:text-6xl text-charcoal tracking-tight">
+          <h1 className="font-serif text-4xl md:text-6xl text-charcoal dark:text-white tracking-tight">
             Collections
           </h1>
-          <p className="text-soft-gray mt-3 max-w-xl">
+          <p className="text-soft-gray dark:text-white/70 mt-3 max-w-xl">
             Photography and videography curated by Flymac Studios.
           </p>
         </div>

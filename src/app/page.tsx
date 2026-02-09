@@ -20,7 +20,7 @@ export default function HomePage() {
       <aside className="relative w-full md:w-1/2 md:min-h-screen flex-shrink-0 order-1 md:order-1">
         <HeroVideo disableOnMobile={true} />
       </aside>
-      <main className="w-full md:w-1/2 bg-white flex-shrink-0 order-2 md:order-2 flex items-center justify-center">
+      <main className="w-full md:w-1/2 bg-white dark:bg-dark-bg flex-shrink-0 order-2 md:order-2 flex items-center justify-center transition-colors duration-300">
         <HeroContent />
       </main>
     </Layout>
